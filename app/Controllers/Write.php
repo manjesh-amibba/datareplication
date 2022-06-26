@@ -19,20 +19,23 @@ class Write extends BaseController
           // No Need to replicate
           return;
         }else{
-          // Replication request.
+          // Vaid Replication request.
           $this->dataModel->writeDataWithId($id, $key, $value);
           return;
         }
 
       }
+      // First time data Writing
       $this->dataModel->writeData($key, $value);
       $this->replicate();
     }
+
     public function addDataForm(){
       echo view('header');
       echo view('add-data-form');
       echo view('footer');
     }
+    
     public function replicate(){
       $datas = $this->dataModel->getAllData();
       //Machine 2, instant replication

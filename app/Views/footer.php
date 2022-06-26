@@ -27,6 +27,9 @@
     <script src="/assets/js/typewriter-custom.js"></script>
     <script src="/assets/plugins/tiny-slider/min/tiny-slider.js"></script>
 	  <script src="/assets/js/tinyslider-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/datareplication.js"></script>
+
 
 </body>
 </html>

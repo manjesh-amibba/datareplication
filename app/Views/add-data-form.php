@@ -19,7 +19,8 @@
           <button type="button" class="btn btn-primary w-100 theme-btn mx-auto" onclick="writeData()">Write data</button>
         </div>
       </form>
-
+      <br/><br/>
+      <div class="alert alert-success" role="alert" id="write-status" style="display:none;">Successfully posted data on server 1</div>
       <div class="auth-option text-center pt-5"><a class="text-link" href="/"  target="_blank">Return to Home page</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a class="text-link" href="/status"  target="_blank">Return to Status page</a></div>
     </div><!--//auth-form-container-->
   </div><!--//auth-wrapper-->

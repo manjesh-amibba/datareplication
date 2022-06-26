@@ -11,10 +11,8 @@ class Write extends BaseController
 
     public function writeData()
     {
-      //$key = $_POST['data-key'];
-      //$value = $_POST['data-value'];
-      $key = "key2";
-      $value = "value2";
+      $key = $_POST['key'];
+      $value = $_POST['value'];
       $this->dataModel->writeData($key, $value);
     }
     public function addDataForm(){

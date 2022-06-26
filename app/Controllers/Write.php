@@ -46,7 +46,7 @@ class Write extends BaseController
           'id' => count($datas)
 
       ];
-      $this->replicateAPICall($post, $url);
+      $this->replicateAPICall($post, $url2);
       if(count($datas)%10 == 0){
         $url3 = "http://ec2-3-110-157-240.ap-south-1.compute.amazonaws.com/write-data";
         $url4 = "http://ec2-65-0-132-227.ap-south-1.compute.amazonaws.com/write-data";

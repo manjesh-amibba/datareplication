@@ -61,7 +61,7 @@ class Write extends BaseController
         }
         }
       }
-  
+
 public function replicate5(){
   $url5 = "http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com/write-data";
   $datas = $this->dataModel->getAllData();
@@ -75,7 +75,7 @@ public function replicate5(){
   }
 }
 
-priavte replicateAPICall($data, $url){
+public function replicateAPICall($data, $url){
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);

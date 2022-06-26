@@ -11,7 +11,15 @@ class Read extends BaseController
 
     public function readData()
     {
-        $data = $this->dataModel->getAllData();
-        print_r($data);
+        $datas = $this->dataModel->getAllData();
+        $result = array();
+        foreach($datas as $data){
+          $keyValueArray[$data->data_key] = $data->data_value;
+          $result[$data->id] = $keyValueArray;
+        }
+
+        $result['recordcount'] = count($datas);
+    		echo json_encode($result);
+
     }
 }

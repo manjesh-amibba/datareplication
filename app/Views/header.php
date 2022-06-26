@@ -52,9 +52,9 @@
 						          Servers
 						        </a>
 						        <ul class="dropdown-menu rounded shadow menu-animate slideIn" aria-labelledby="navbarDropdown">
-						            <li><a class="dropdown-item has-icon" href="/server1"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 1</a></li>
-                        <li><a class="dropdown-item has-icon" href="/server2"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 2</a></li>
-                        <li><a class="dropdown-item has-icon" href="/server3"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 3</a></li>
+						            <li><a class="dropdown-item has-icon" href="server1.com/data"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 1 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="/server2"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 2 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="/server3"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 3 Data</a></li>
                     </ul>
 						    </li>
 						</ul>

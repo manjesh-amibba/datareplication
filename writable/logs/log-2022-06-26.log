@@ -34,3 +34,21 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Write))
  6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 09:19:56 --> Undefined variable $data
+in APPPATH\Controllers\Read.php on line 27.
+ 1 APPPATH\Controllers\Read.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Read.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Read->showData()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Read))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 09:27:02 --> Undefined property: stdClass::$key
+in APPPATH\Views\show-data.php on line 13.
+ 1 APPPATH\Views\show-data.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$key', 'APPPATH\\Views\\show-data.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\show-data.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('show-data', [], true)
+ 5 APPPATH\Controllers\Read.php(27): view('show-data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Read->showData()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Read))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

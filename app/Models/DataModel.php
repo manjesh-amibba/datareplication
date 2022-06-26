@@ -19,9 +19,22 @@ class DataModel extends Model
         return $result;
     }
 
+
+
+    public function getDataById($id){
+      $query = $this->db->query("SELECT * FROM test_data where id = ".$id);
+      $result =  $query->getResult();
+      return $result;
+    }
+
     public function writeData($key, $value)
     {
         $query = "INSERT INTO test_data(data_key, data_value) VALUES('$key', '$value')";
+        $this->db->query($query);
+    }
+    public function writeDataWithId($id, $key, $value)
+    {
+        $query = "INSERT INTO test_data(id, data_key, data_value) VALUES($id, '$key', '$value')";
         $this->db->query($query);
     }
 }

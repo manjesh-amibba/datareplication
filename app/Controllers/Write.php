@@ -13,6 +13,18 @@ class Write extends BaseController
     {
       $key = $_POST['key'];
       $value = $_POST['value'];
+      if (isset($_POST['id'])){
+        $datas = $this->dataModel->getDataById($_POST['id']);
+        if(count($datas) > 0){
+          // No Need to replicate
+          return;
+        }else{
+          // Replication request.
+          $this->dataModel->writeDataWithId($id, $key, $value);
+          return;
+        }
+
+      }
       $this->dataModel->writeData($key, $value);
       $this->replicate();
     }

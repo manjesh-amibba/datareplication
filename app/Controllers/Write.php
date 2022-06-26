@@ -17,5 +17,10 @@ class Write extends BaseController
       $value = "value2";
       $this->dataModel->writeData($key, $value);
     }
+    public function addDataForm(){
+      echo view('header');
+      echo view('add-data-form');
+      echo view('footer');
+    }
 
 }

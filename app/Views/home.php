@@ -5,8 +5,8 @@
 				    <h1 class="site-headline font-weight-bold mb-3">Launch and promote your software project like a pro</h1>
 				    <div class="site-tagline mb-4">Designed for entrepreneurial software developers, CoderPro is the ultimate Bootstrap 5 Template for promoting or selling your <span id="typewriter" class="text-primary font-weight-bold"></span>.</div>
 				    <div class="cta-btns mb-lg-3">
-					    <a class="btn btn-primary me-2 mb-3" href="pricing.html">Add Data<i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
-					    <a class="btn btn-secondary mb-3" href="docs.html">View Status<i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+					    <a class="btn btn-primary me-2 mb-3" href="/add-data-form">Add Data<i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+					    <a class="btn btn-secondary mb-3" href="/status">View Status<i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
 				    </div>
 			    </div>
 			    <div class="col-12 col-lg-6 text-center">

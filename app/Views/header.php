@@ -55,11 +55,8 @@
 						            <li><a class="dropdown-item has-icon" href="/server1"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 1</a></li>
                         <li><a class="dropdown-item has-icon" href="/server2"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 2</a></li>
                         <li><a class="dropdown-item has-icon" href="/server3"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 3</a></li>
-                    </ul>    
+                    </ul>
 						    </li>
-							<li class="nav-item me-lg-0 mt-3 mt-lg-0">
-							   <a class="btn btn-primary text-white" href="/write-data">Write Data</a>
-							</li>
 						</ul>
 					</div>
 				</nav>

@@ -39,6 +39,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get('read-data', 'Read::readData');
 $routes->get('write-data', 'Write::writeData');
+$routes->get('add-data-form', 'Write::addDataForm');
 $routes->get('status', 'Status::showStatus');
 
 /*

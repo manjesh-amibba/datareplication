@@ -12,7 +12,7 @@ class Status extends BaseController
     public function showStatus()
     {
       $result['datas'] = $this->dataModel->getAllData();
-      echo view('header');
+      echo view('header-status');
       echo view('status', $result);
       echo view('footer');
     }

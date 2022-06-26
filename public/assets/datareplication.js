@@ -18,12 +18,34 @@ function writeData(){
 }
 function updateStatus1(){
   $.get("read-data", function(data, status){
-      
+    json = JSON.parse(data);
+    recordcount = json.recordcount;
+    for(i=1; i <= recordcount; i++){
+       key = "key_"+i;
+       valueKey = "value_"+i;
+        tableRowData = '<tr>\
+          <th class="theme-bg-light"><a class="theme-link" href="#">'+i+'</a></th>\
+          <td>'+json->{key}+'</td>\
+          <td>'+json->{valueKey}+'</td>\
+        </tr>';
+        $("#server-data-table-1 tbody").append(tableRowData);
+    }
+    /* $(json).each(function (i, val) {
+      $.each(val, function (tableId, result) {
+        $.each(result, function(key, value) {
+          tableRowData = '<tr>\
+            <th class="theme-bg-light"><a class="theme-link" href="#">'+tableId+'</a></th>\
+            <td>'+key+'</td>\
+            <td>'+value+'</td>\
+          </tr>';
+          $("#server-data-table-1 tbody").append(tableRowData);
+        });
+
+      });
+    });*/
+
   });
 }
-var intervalId = window.setInterval(function(){
-  updateStatus();
-}, 10000);
 
 function updateStatus(){
   updateStatus1();

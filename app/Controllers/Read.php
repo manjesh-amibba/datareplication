@@ -14,8 +14,8 @@ class Read extends BaseController
         $datas = $this->dataModel->getAllData();
         $result = array();
         foreach($datas as $data){
-          $keyValueArray[$data->data_key] = $data->data_value;
-          $result[$data->id] = $keyValueArray;
+          $result['key_'.$data->id] = $data->data_key;
+          $result['value_'.$data->id] = $data->data_value;
         }
         $result['recordcount'] = count($datas);
     		echo json_encode($result);

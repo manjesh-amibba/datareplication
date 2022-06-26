@@ -5,22 +5,16 @@
 
 <h5>Data On Server 1:</h5>
 <div class="table-responsive my-4">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="server-data-table-1">
     <tbody>
-      <?php foreach ($datas as $data) {?>
-        <tr>
-          <th class="theme-bg-light"><a class="theme-link" href="#"><?php echo $data->id;?></a></th>
-          <td><?php echo $data->data_key;?></td>
-          <td><?php echo $data->data_value;?></td>
-        </tr>
-      <?php }?>
+
     </tbody>
   </table>
 </div>
 
 <h5>Data On Server 2:</h5>
 <div class="table-responsive my-4">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="server-data-table-2">
     <tbody>
       <?php foreach ($datas as $data) {?>
         <tr>
@@ -35,7 +29,7 @@
 
 <h5>Data On Server 3:</h5>
 <div class="table-responsive my-4">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="server-data-table-3">
     <tbody>
       <?php foreach ($datas as $data) {?>
         <tr>
@@ -50,7 +44,7 @@
 
 <h5>Data On Server 4:</h5>
 <div class="table-responsive my-4">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="server-data-table-4">
     <tbody>
       <?php foreach ($datas as $data) {?>
         <tr>
@@ -65,7 +59,7 @@
 
 <h5>Data On Server 5:</h5>
 <div class="table-responsive my-4">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="server-data-table-5">
     <tbody>
       <?php foreach ($datas as $data) {?>
         <tr>

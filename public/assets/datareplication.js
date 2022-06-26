@@ -25,25 +25,11 @@ function updateStatus1(){
        valueKey = "value_"+i;
         tableRowData = '<tr>\
           <th class="theme-bg-light"><a class="theme-link" href="#">'+i+'</a></th>\
-          <td>'+json->{key}+'</td>\
-          <td>'+json->{valueKey}+'</td>\
+          <td>'+ json.key_1 +'</td>\
+          <td>' + json.value_1 + '</td>\
         </tr>';
         $("#server-data-table-1 tbody").append(tableRowData);
     }
-    /* $(json).each(function (i, val) {
-      $.each(val, function (tableId, result) {
-        $.each(result, function(key, value) {
-          tableRowData = '<tr>\
-            <th class="theme-bg-light"><a class="theme-link" href="#">'+tableId+'</a></th>\
-            <td>'+key+'</td>\
-            <td>'+value+'</td>\
-          </tr>';
-          $("#server-data-table-1 tbody").append(tableRowData);
-        });
-
-      });
-    });*/
-
   });
 }
 

@@ -31,7 +31,7 @@
         <div class="branding">
             <div class="container-fluid position-relative">
 				<nav class="navbar navbar-expand-lg" >
-                    <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="/assets/images/site-logo.svg" alt="logo"><span class="logo-text">Cloud<span class="text-alt">Data Raplicator</span></span></a></div>
+                    <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon me-2" src="/assets/images/site-logo.svg" alt="logo"><span class="logo-text">Cloud<span class="text-alt">Data Raplicator</span></span></a></div>
 
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 	                    <span> </span>
@@ -51,10 +51,12 @@
 						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						          Servers
 						        </a>
-						        <ul class="dropdown-menu rounded shadow menu-animate slideIn" aria-labelledby="navbarDropdown">
-						            <li><a class="dropdown-item has-icon" href="server1.com/data"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 1 Data</a></li>
-                        <li><a class="dropdown-item has-icon" href="/server2"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 2 Data</a></li>
-                        <li><a class="dropdown-item has-icon" href="/server3"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 3 Data</a></li>
+                    <ul class="dropdown-menu rounded shadow menu-animate slideIn" aria-labelledby="navbarDropdown">
+						            <li><a class="dropdown-item has-icon" href="http://ec2-43-204-38-93.ap-south-1.compute.amazonaws.com/data"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 1 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="http://ec2-65-0-18-227.ap-south-1.compute.amazonaws.com"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 2 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="http://ec2-3-110-157-240.ap-south-1.compute.amazonaws.com"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 3 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="http://ec2-65-0-132-227.ap-south-1.compute.amazonaws.com"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 4 Data</a></li>
+                        <li><a class="dropdown-item has-icon" href="http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com"><span class="theme-icon-holder me-2"><i class="fas fa-home fa-fw"></i></span>Server 5 Data</a></li>
                     </ul>
 						    </li>
 						</ul>

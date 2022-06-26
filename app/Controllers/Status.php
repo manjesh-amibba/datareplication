@@ -2,11 +2,15 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Status extends BaseController
 {
     public function index()
     {
         //return view('welcome_message');
-        echo "Welcome to Data Replication project";
+    }
+
+    public function showStatus()
+    {
+      
     }
 }

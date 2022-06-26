@@ -38,7 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 $routes->get('read-data', 'Read::readData');
-$routes->post('write-data', 'Write::writeData');
+$routes->get('write-data', 'Write::writeData');
 $routes->get('status', 'Status::showStatus');
 
 /*

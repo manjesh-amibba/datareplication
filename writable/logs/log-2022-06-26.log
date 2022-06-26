@@ -1,0 +1,18 @@
+CRITICAL - 2022-06-26 05:22:50 --> Unclosed '{' on line 6
+in APPPATH\Models\DataModel.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\DataModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\DataModel')
+ 3 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\DataModel')
+ 4 SYSTEMPATH\CodeIgniter.php(859): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-26 05:23:48 --> Too few arguments to function App\Models\DataModel::writeData(), 0 passed in C:\xampp\htdocs\websites\datareplication\app\Controllers\Write.php on line 18 and exactly 2 expected
+in APPPATH\Models\DataModel.php on line 22.
+ 1 APPPATH\Controllers\Write.php(18): App\Models\DataModel->writeData()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Write->writeData()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Write))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-26 05:24:31 --> No database selected
+ERROR - 2022-06-26 05:25:21 --> No database selected

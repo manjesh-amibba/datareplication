@@ -61,8 +61,7 @@ class Write extends BaseController
         }
         }
       }
-    }
-
+  
 public function replicate5(){
   $url5 = "http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com/write-data";
   $datas = $this->dataModel->getAllData();

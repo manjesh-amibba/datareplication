@@ -14,13 +14,13 @@ class Write extends BaseController
       $key = $_POST['key'];
       $value = $_POST['value'];
       if (isset($_POST['id'])){
-        $datas = $this->dataModel->getDataById($_POST['id']);
-        if(count($datas) > 0){
-          // No Need to replicate
+        $id = $_POST['id'];
+        $datas = $this->dataModel->getDataById($id);
+        if(count($datas) === 0){
+          $this->dataModel->writeDataWithId($id, $key, $value);
           return;
         }else{
-          // Vaid Replication request.
-          $this->dataModel->writeDataWithId($id, $key, $value);
+          // No Need to do anything;
           return;
         }
 
@@ -76,13 +76,13 @@ public function replicate5(){
 }
 
 public function replicateAPICall($data, $url){
+  $fields_string = http_build_query($data);
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL,  $url );
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );
-  curl_setopt($ch, CURLOPT_POST,           1 );
-  curl_setopt($ch, CURLOPT_POSTFIELDS,    $data );
-  curl_setopt($ch, CURLOPT_HTTPHEADER,     array('Content-Type: text/plain'));
+  curl_setopt($ch,CURLOPT_URL, $url);
+  curl_setopt($ch,CURLOPT_POST, 1);
+  curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
   $result = curl_exec($ch);
+  echo $result;
   curl_close($ch);
   }
 

@@ -14,8 +14,10 @@ class Test extends BaseController
       //print_r($_POST);
       $key = "Test Key ";
       $value = "Test Value ";
-      //$this->dataModel->writeData($key, $value);
+      $this->dataModel->writeData($key, $value);
       $this->replicate($key, $value);
+      $datas = $this->dataModel->getDataById(4568);
+      //print_r($datas);
     }
 
     public function addDataForm(){
@@ -27,12 +29,13 @@ class Test extends BaseController
     public function replicate($key, $value){
       $datas = $this->dataModel->getAllData();
       //Machine 1, instant replication
-      $url2 = "http://ec2-65-0-18-227.ap-south-1.compute.amazonaws.com/write-data";
+      $url2 = "http://datareplication.com/write-data";
       $post = array(
           'key' => $key,
           'value' => $value,
-          'id' => count($datas)
+          'id' => 123
           );
+      //$this->dataModel->writeDataWithId(500, $key, $value);
       $this->replicateAPICall($post, $url2);
 
       }
@@ -40,14 +43,13 @@ class Test extends BaseController
 
 
 public function replicateAPICall($data, $url){
-  print_r($data);
+    $fields_string = http_build_query($data);
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL,  $url );
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );
-    curl_setopt($ch, CURLOPT_POST,           1 );
-    curl_setopt($ch, CURLOPT_POSTFIELDS,    $data );
-    curl_setopt($ch, CURLOPT_HTTPHEADER,     array('Content-Type: text/plain'));
+    curl_setopt($ch,CURLOPT_URL, $url);
+    curl_setopt($ch,CURLOPT_POST, 1);
+    curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
     $result = curl_exec($ch);
+    echo $result;
     curl_close($ch);
   }
 

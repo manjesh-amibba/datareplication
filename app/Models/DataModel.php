@@ -37,4 +37,9 @@ class DataModel extends Model
         $query = "INSERT INTO test_data(id, data_key, data_value) VALUES($id, '$key', '$value')";
         $this->db->query($query);
     }
+
+    public function deleteData(){
+      $query = "TRUNCATE TABLE Categories";
+      $this->db->query($query);
+    }
 }

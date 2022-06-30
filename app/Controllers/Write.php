@@ -9,6 +9,9 @@ class Write extends BaseController
         //return view('welcome_message');
     }
 
+    public function deleteData(){
+      $this->dataModel->deleteData();
+    }
     public function writeData()
     {
       $key = $_POST['key'];

@@ -67,6 +67,7 @@ class Write extends BaseController
       }
 
 public function replicate5(){
+  sleep(20);
   $url5 = "http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com/write-data";
   $datas = $this->dataModel->getAllData();
   foreach ($datas as $data) {
@@ -75,7 +76,6 @@ public function replicate5(){
         'value' => $data->data_value,
         'id' => $data->id,
     ];
-    sleep(20);
     $this->replicateAPICall($post, $url5);
   }
 }

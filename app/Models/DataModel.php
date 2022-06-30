@@ -39,7 +39,7 @@ class DataModel extends Model
     }
 
     public function deleteData(){
-      $query = "TRUNCATE TABLE Categories";
+      $query = "TRUNCATE TABLE test_data";
       $this->db->query($query);
     }
 }

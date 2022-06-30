@@ -59,6 +59,7 @@ class Write extends BaseController
           $this->replicateAPICall($post, $url3);
           $this->replicateAPICall($post, $url4);
         }
+        replicate5();
         }
       }
 
@@ -71,6 +72,7 @@ public function replicate5(){
         'value' => $data->data_value,
         'id' => $data->id,
     ];
+    sleep(20);
     $this->replicateAPICall($post, $url5);
   }
 }

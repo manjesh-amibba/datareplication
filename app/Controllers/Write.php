@@ -53,6 +53,7 @@ class Write extends BaseController
       if(count($datas)%10 == 0){
         $url3 = "http://ec2-3-110-157-240.ap-south-1.compute.amazonaws.com/write-data";
         $url4 = "http://ec2-65-0-132-227.ap-south-1.compute.amazonaws.com/write-data";
+        $url5 = "http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com/write-data";
         foreach ($datas as $data) {
           $post = [
               'key' => $data->data_key,
@@ -61,14 +62,13 @@ class Write extends BaseController
           ];
           $this->replicateAPICall($post, $url3);
           $this->replicateAPICall($post, $url4);
+          $this->replicateAPICall($post, $url5);
         }
-        replicate5();
         }
       }
 
 public function replicate5(){
-  sleep(20);
-  $url5 = "http://ec2-13-127-217-50.ap-south-1.compute.amazonaws.com/write-data";
+
   $datas = $this->dataModel->getAllData();
   foreach ($datas as $data) {
     $post = [

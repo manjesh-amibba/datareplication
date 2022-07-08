@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CoderPro - Bootstrap 5 Template For Software Projects</title>
+    <title>Data Replication</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -31,7 +31,7 @@
         <div class="branding">
             <div class="container-fluid position-relative">
 				<nav class="navbar navbar-expand-lg" >
-                    <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon me-2" src="/assets/images/site-logo.svg" alt="logo"><span class="logo-text">Cloud<span class="text-alt">Data Raplicator</span></span></a></div>
+                    <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon me-2" src="/assets/images/site-logo.svg" alt="logo"><span class="logo-text">Cloud<span class="text-alt"> Data Replication</span></span></a></div>
 
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 	                    <span> </span>
@@ -41,12 +41,12 @@
 
 					<div class="collapse navbar-collapse py-3 py-lg-0" id="navigation">
 						      <ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-none d-xl-flex ms-lg-3 me-lg-3">
-			                <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+			                <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> -->
 			            </ul><!--//social-list-->
 						<ul class="navbar-nav ms-lg-auto">
-							<li class="nav-item me-lg-4">
+							<!-- <li class="nav-item me-lg-4">
 							    <a class="nav-link" href="/status">Status</a>
-							</li>
+							</li> -->
               <li class="nav-item dropdown me-lg-4">
 						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						          Servers

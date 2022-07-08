@@ -23,6 +23,12 @@ class Read extends BaseController
 
     public function showData(){
       $result['datas'] = $this->dataModel->getAllData();
+      $processedData = array();
+      if(count($result['datas']) != 0 ){
+        if(property_exists($result['datas'][0], 'create_time')){
+          sleep(20);
+        }
+      }
       echo view('header');
       echo view('show-data', $result);
       echo view('footer');
